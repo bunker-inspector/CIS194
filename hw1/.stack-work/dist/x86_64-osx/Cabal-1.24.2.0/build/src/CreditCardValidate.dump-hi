@@ -1,0 +1,111 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-18 21:33:09.012788 UTC
+
+interface hw1-0.1.0.0-MINIKH6kpTCK6ZiYi3d4J:CreditCardValidate 8002
+  interface hash: 63657a892849a9b77f4b73ec099e8227
+  ABI hash: 391344cba6a69ce2a03e3f12c22d7f02
+  export-list hash: f2d1a06b0b153ac0a46d27bd189f8c2b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  CreditCardValidate.toDigits
+  CreditCardValidate.toDigitsRev
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+ada6072686d8da97b9d5dbfcbde6a971
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   CreditCardValidate.$trModule2
+                   CreditCardValidate.$trModule1) -}
+96b874b799afd36a3d1c85917413b528
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CreditCardValidate"#) -}
+bcc679e0a969f54a96033837b40f3d42
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "hw1-0.1.0.0-MINIKH6kpTCK6ZiYi3d4J"#) -}
+66b91f0b7cfd7441c1b0350ec84bbef1
+  toDigits :: GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.geInteger#
+                        w
+                        CreditCardValidate.toDigits2 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False
+                   -> GHC.Types.:
+                        @ GHC.Integer.Type.Integer
+                        w
+                        (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Integer.Type.Integer
+                        CreditCardValidate.toDigits1
+                        (GHC.Types.:
+                           @ GHC.Integer.Type.Integer
+                           (GHC.Integer.Type.minusInteger w CreditCardValidate.toDigits2)
+                           (GHC.Types.[] @ GHC.Integer.Type.Integer)) } }) -}
+1b5aa86615a6cebfbc43a47deb7dd6e3
+  toDigits1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+52269570edec7513f58b01ce19a66c4c
+  toDigits2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10) -}
+25899dee8bda1a314d6326d3be2e6b48
+  toDigitsRev ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (n :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.geInteger#
+                        n
+                        CreditCardValidate.toDigits2 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False
+                   -> GHC.Types.:
+                        @ GHC.Integer.Type.Integer
+                        n
+                        (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                   GHC.Types.True
+                   -> CreditCardValidate.toDigitsRev_go
+                        (GHC.Types.:
+                           @ GHC.Integer.Type.Integer
+                           CreditCardValidate.toDigits1
+                           (GHC.Types.:
+                              @ GHC.Integer.Type.Integer
+                              (GHC.Integer.Type.minusInteger n CreditCardValidate.toDigits2)
+                              (GHC.Types.[] @ GHC.Integer.Type.Integer)))
+                        (GHC.Types.[] @ GHC.Integer.Type.Integer) } }) -}
+9ca1ef6bb4c639a168fed62f03811d24
+  toDigitsRev_go ::
+    [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer] -> [GHC.Integer.Type.Integer]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
